@@ -67,8 +67,27 @@
                 flex: 1;
             }
 
+            #login h1{
+                font-family: 'Quicksand';
+            }
+
+            #login label{
+                font-family: 'Urbanist';
+            }
+
+            #login input{
+                font-weight: bold;
+                color: black;
+                font-family: 'Urbanist';
+            }
+
             footer {
                 margin-top: auto;
+                font-family: 'Urbanist';
+            }
+            .navbar-brand{
+                font-family: 'DynaPuff';
+                font-size: 1.9rem;
             }
 
         </style>
@@ -79,8 +98,7 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="home.html" style="font-family: 'DynaPuff';
-                font-size: 1.9rem;">Cuisines</a>
+                <a class="navbar-brand" href="home.html">Cuisines</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -115,17 +133,17 @@
 
 
 <section id="login" class="container my-5">
-    <h1 class="text-center mb-4" style="font-family: 'Urbanist';">Login</h2>
+    <h1 class="text-center mb-4">Login</h2>
     <div class="row justify-content-center">
         <div class="col-lg-6">
-            <form style="font-family: 'Quicksand';">
+            <form>
                 <div class="mb-3">
                     <label for="signupEmail" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="signupEmail" style="color: black;font-weight: bold;" required>
+                    <input type="email" class="form-control" id="signupEmail" required>
                 </div>
                 <div class="mb-3">
                     <label for="signupPassword" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="signupPassword" maxlength="8" style="color: black;font-weight: bold;" required>
+                    <input type="password" class="form-control" id="signupPassword" maxlength="8" required>
                 </div>
                 <div class="d-grid">
                     <button type="submit" class="btn btn-outline-dark rounded-pill">Log In</button>
@@ -138,7 +156,7 @@
 
 
 <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4" style="font-family: 'Urbanist';">
+    <footer class="bg-dark text-white text-center py-4" >
         <div class="container">
             <p class="mb-0">&copy; 2025 Cuisines. All rights reserved.</p>
             <p class="small mb-0">Designed with <a href="https://getbootstrap.com/" class="text-white">Bootstrap 5</a></p>
