@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Cuisines</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Delius&family=Delius+Swash+Caps&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+CA:wght@100..400&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <style>
+            html{
+                cursor: pointer;
+                scroll-behavior: smooth;
+                -webkit-tap-highlight-color: transparent;
+                tap-highlight-color: transparent;
+                scroll-behavior: smooth;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+
+            }
+            body{
+                scroll-behavior: smooth;
+                -webkit-tap-highlight-color: transparent;
+                tap-highlight-color: transparent;
+                scroll-behavior: smooth;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+
+            }
+
+            .nav-link{
+                font-family: 'Urbanist';
+                font-size: 1.1rem;
+            }
+
+            .d-flex{
+                font-family: 'Urbanist';
+                font-size: 0.8rem;
+            }
+
+            .text-start{
+                font-family: 'Yusei Magic';
+            }     
+
+            .card{
+                background-color: whitesmoke;
+            }
+            
+            .card img{
+                height: 50%;
+            }
+
+            .card-text{
+                font-family: 'Quicksand';
+            }
+
+            h5{
+                font-family: 'Urbanist';
+            }
+
+            .carousel-item img {
+                height: 500px;   
+                object-fit: cover; 
+            }
+
+            @media (max-width: 768px){
+                .carousel-item img{
+                    height: 400px;
+                    object-fit: cover;
+                }
+            } 
+
+            @media (max-width : 480px){
+                .carousel-item img{
+                    height: 300px;
+                    object-fit: cover;
+                }
+            }
+        </style>
+
+    </head>
+    <body class="d-flex flex-column min-vh-100">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home.html" style="font-family: 'DynaPuff';
+                font-size: 1.9rem;">Cuisines</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Account
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="signup.html">Sign up</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-light" type="submit">Search</button>
+                </form>
+                </div>
+            </div>
+        </nav>
+
+<!-- Image Slider -->
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="2000">
+      <img src="slider-1.jpeg" class="d-block w-100" alt="Restaurant">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="slider-2.jpeg" class="d-block w-100" alt="Pasta">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="slider-3.jpeg" class="d-block w-100" alt="Pizza">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="slider-4.jpeg" class="d-block w-100" alt="Pizza">
+    </div>
+  </div>
+</div>
+
+
+<!--Container-->
+        <div class="container-fluid mx-autos text-center py-5 bg-secondary">
+            <div class="container text-white">
+                <h1 class="display-4 fw-bold" style="font-family: 'Quicksand';">the best</h1>
+                <h2 class="display-4 fw-bold" style="font-family: 'Playwrite CA';">options of the day</h1>
+                <h1 class="display-4 fw-bold" style="font-family: 'Quicksand';">in your town</h1>
+                <p class="lead" style="font-size: 1rem;">Serving the best pancakes, waffles, and breakfast delights in town.</p>
+        </div>
+        </div>
+
+<!--Menu Cards Section-->
+<section id="menu" class="container my-5">
+        <h2 class="text-center mb-4 text-grey" style="font-family: 'Urbanist';">Our Delicious Menu</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            
+            <!-- Menu Card 1 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm rounded-3">
+                    <img src="pancakes.jpeg" class="card-img-top rounded-top" alt="Pancakes">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Classic Buttermilk Pancakes</h5>
+                        <p class="card-text text-muted">A stack of three fluffy buttermilk pancakes served with maple syrup and fresh berries.</p>
+                    </div>
+                    <div class="card-footer bg-light border-0">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="mb-0 text-success">$9.99</h4>
+                            <button class="btn btn-outline-secondary rounded-pill">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Card 2 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm rounded-3">
+                    <img src="waffles.jpeg" class="card-img-top rounded-top" alt="Waffles">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Belgian Chocolate Waffles</h5>
+                        <p class="card-text text-muted">Crispy Belgian waffles drizzled with rich chocolate sauce and topped with whipped cream.</p>
+                    </div>
+                    <div class="card-footer bg-light border-0">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="mb-0 text-success">$11.50</h4>
+                            <button class="btn btn-outline-secondary rounded-pill">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Card 3 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm rounded-3">
+                    <img src="omlette.jpeg" class="card-img-top rounded-top" alt="Omelet">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Garden Veggie Omelet</h5>
+                        <p class="card-text text-muted">A delicious omelet filled with fresh spinach, bell peppers, onions, and melted cheddar cheese.</p>
+                    </div>
+                    <div class="card-footer bg-light border-0">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="mb-0 text-success">$10.75</h4>
+                            <button class="btn btn-outline-secondary rounded-pill">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm rounded-3">
+                    <img src="burger.jpeg" class="card-img-top rounded-top" alt="Burger">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Classic Cheeseburger</h5>
+                        <p class="card-text text-muted">Juicy beef patty with caramelized onions, swiss cheese, and special sauce on a brioche bun.</p>
+                    </div>
+                    <div class="card-footer bg-light border-0">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="mb-0 text-success">$12.99</h4>
+                            <button class="btn btn-outline-secondary rounded-pill">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm rounded-3">
+                    <img src="pasta.jpeg" class="card-img-top rounded-top" alt="Pasta">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Spaghetti Marinara</h5>
+                        <p class="card-text text-muted">Daily fresh pasta with a rich tomato and basil sauce, topped with Parmesan cheese.</p>
+                    </div>
+                    <div class="card-footer bg-light border-0">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="mb-0 text-success">$14.25</h4>
+                            <button class="btn btn-outline-secondary rounded-pill">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm rounded-3">
+                    <img src="salad.jpeg" class="card-img-top rounded-top" alt="Salad">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Fresh Garden Salad</h5>
+                        <p class="card-text text-muted">A crisp mix of seasonal greens, cherry tomatoes, cucumbers, and a zesty vinaigrette.</p>
+                    </div>
+                    <div class="card-footer bg-light border-0">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="mb-0 text-success">$8.50</h4>
+                            <button class="btn btn-outline-secondary rounded-pill">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm rounded-3">
+                    <img src="pizza.jpeg" class="card-img-top rounded-top" alt="Pizza">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Pepperoni Pizza</h5>
+                        <p class="card-text text-muted">A classic pizza topped with rich tomato sauce, melted mozzarella, and spicy pepperoni slices.</p>
+                    </div>
+                    <div class="card-footer bg-light border-0">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="mb-0 text-success">$15.99</h4>
+                            <button class="btn btn-outline-secondary rounded-pill">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm rounded-3">
+                    <img src="taco.jpeg" class="card-img-top rounded-top" alt="Tacos">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Street Tacos</h5>
+                        <p class="card-text text-muted">Three soft corn tortillas filled with your choice of seasoned chicken or beef, topped with cilantro and onion.</p>
+                    </div>
+                    <div class="card-footer bg-light border-0">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="mb-0 text-success">$10.25</h4>
+                            <button class="btn btn-outline-secondary rounded-pill">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm rounded-3">
+                    <img src="burrito.jpeg" class="card-img-top rounded-top" alt="Burrito">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Breakfast Burrito</h5>
+                        <p class="card-text text-muted">A large flour tortilla filled with scrambled eggs, potatoes, sausage, and a blend of cheeses.</p>
+                    </div>
+                    <div class="card-footer bg-light border-0">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="mb-0 text-success">$9.50</h4>
+                            <button class="btn btn-outline-secondary rounded-pill">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+<!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4" style="font-family: 'Urbanist';">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Cuisines. All rights reserved.</p>
+            <p class="small mb-0">Designed with <a href="https://getbootstrap.com/" class="text-white">Bootstrap 5</a></p>
+        </div>
+    </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    </body>
+</html>
